@@ -29,6 +29,7 @@ html {
   border-radius: 1em;
   max-width: 15em;
   box-shadow: 0.5em 0.5em rgba(0, 0, 0, 0.1);
+  margin-bottom: 1em;
 }
 
 .card:hover {
