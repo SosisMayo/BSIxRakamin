@@ -1,0 +1,19 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #def3f2;
+}
+
+.card-parrent {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 1em;
+}
