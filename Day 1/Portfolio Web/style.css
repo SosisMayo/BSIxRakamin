@@ -1,0 +1,247 @@
+html,
+body {
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  width: 100%; /* Ensures it spans the full width */
+  height: 100%; /* Ensures it spans the full height */
+  box-sizing: border-box; /* Applies box-sizing consistently */
+  font-family: Monolith, Helvetica, sans-serif;
+  background-color: white;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: lighter;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+i {
+  font-size: 2em;
+  padding: 0.5em;
+  border-radius: 50%;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+}
+
+.socmed {
+  position: fixed;
+  top: 25%;
+  right: 0;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+nav {
+  margin-bottom: 8em;
+}
+
+nav ul {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+li {
+  list-style: none;
+  font-size: 1.5em;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 0 10em;
+  margin-bottom: 8em;
+}
+
+.kiri,
+.kanan {
+  width: 50%;
+  padding: 1em;
+}
+
+.kiri img {
+  width: 100px;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 2em;
+}
+
+.kiri h1 {
+  margin-top: 0;
+}
+
+.kanan {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.cta {
+  display: flex;
+  gap: 1em;
+  margin-top: 2em;
+}
+
+button {
+  border: none;
+  padding: 0 1.5em;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.talk {
+  background-color: #016fb9;
+  color: white;
+}
+
+.seework {
+  background-color: lightgrey;
+  color: black;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 3em;
+  margin-bottom: 10px;
+  font-weight: lighter;
+}
+
+.experience {
+  background-color: #f5f5f0;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 8em 10em 8em 10em;
+}
+
+.experience h2 {
+  margin-bottom: 1.5em;
+}
+
+.experience .working,
+.experience .educational {
+  flex: 1;
+}
+
+.experience .working {
+  padding-right: 4em;
+}
+
+.working .container .item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  border-bottom: 1px solid #d2d4cc;
+  gap: 1em;
+}
+
+.logo-work {
+  width: 80px;
+  height: 80px;
+  border-radius: 20%;
+  display: block;
+  margin-bottom: 2em;
+}
+
+.penjelasan h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: lighter;
+}
+
+.pt {
+  font-weight: bold;
+  color: #016fb9;
+}
+
+.penjelasan p {
+  margin-top: 1em;
+  margin-bottom: 0;
+  font-weight: lighter;
+}
+
+.educational .container .item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  border-bottom: 1px solid #d2d4cc;
+  gap: 1em;
+}
+
+.logo-edu {
+  width: 80px;
+  height: 80px;
+  border-radius: 20%;
+  display: block;
+  margin-bottom: 2em;
+}
+
+.project {
+  background-color: #f5f5f0;
+  padding: 0em 10em 8em 10em;
+}
+
+.project .atas {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.see-all-project {
+  background-color: #016fb9;
+  color: white;
+}
+
+.project .atas h2 {
+  margin-bottom: 1.5em;
+}
+
+.project .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project .container .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  padding: 1em;
+  border-radius: 1em;
+  background-color: #e7e5e5;
+  margin-bottom: 2em;
+}
+
+.gambar-project {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1em;
+}
+
+.project .container .item .penjelasan h3 {
+  margin: 0;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+.project .container .item .penjelasan p {
+  margin: 0;
+  margin-bottom: 1em;
+  font-weight: lighter;
+}

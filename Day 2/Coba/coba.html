@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: black; color: whitesmoke">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 id="judul">Javascript Function</h2>
+    <p>
+      This example calls a function which performs a calculation, and returns
+      the result:
+    </p>
+
+    <button onclick="night()" id="button-tampilan">
+      <p id="judul-button"></p>
+    </button>
+    <p id="demo"></p>
+    <script defer>
+      let isNight = false;
+      function myFunction(a, b) {
+        return a * b;
+      }
+      document.getElementById("demo").innerHTML = myFunction(4, 3);
+
+      let judul = document.getElementById("judul");
+      let root = document.getElementsByTagName("html");
+      judul.innerHTML = "Judul Baru Boy";
+
+      let button = document.getElementById("button-tampilan");
+      isNight
+        ? (button.style.backgroundColor = "black")
+        : (button.style.backgroundColor = "white");
+      isNight ? (button.style.color = "white") : (button.style.color = "black");
+      isNight
+        ? (root[0].style.backgroundColor = "black")
+        : (root[0].style.backgroundColor = "white");
+      isNight
+        ? (root[0].style.color = "white")
+        : (root[0].style.color = "black");
+      isNight ? (judul.style.color = "white") : (judul.style.color = "black");
+      isNight
+        ? (document.getElementById("judul-button").innerHTML = "Light")
+        : (document.getElementById("judul-button").innerHTML = "Night");
+
+      const night = () => {
+        isNight = !isNight;
+        isNight
+          ? (button.style.backgroundColor = "black")
+          : (button.style.backgroundColor = "white");
+        isNight
+          ? (button.style.color = "white")
+          : (button.style.color = "black");
+        isNight
+          ? (root[0].style.backgroundColor = "black")
+          : (root[0].style.backgroundColor = "white");
+        isNight
+          ? (root[0].style.color = "white")
+          : (root[0].style.color = "black");
+        isNight ? (judul.style.color = "white") : (judul.style.color = "black");
+        isNight
+          ? (document.getElementById("judul-button").innerHTML = "Light")
+          : (document.getElementById("judul-button").innerHTML = "Night");
+      };
+    </script>
+  </body>
+</html>
